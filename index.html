@@ -1,1 +1,28 @@
-simonyue
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Yuet's Blog</title>
+</head>
+<body id="app">
+	<div class="example">
+		<h1>{{title}}</h1>
+		<p>{{name}}</p>
+		<span>{{money}}</span>
+		<input v-model="money"></input>
+	</div>
+	
+
+
+	<script type="text/javascript" src="static/js/vue.js"></script>
+	<script type="text/javascript">
+		var data = {title:'hello',name:'simon',money:0};
+
+		var vm = new Vue({
+			el:'.example',
+			data:data
+		})
+
+	</script>
+</body>
+</html>
